@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tidy Pack Master</title>
+  <style>
+    :root {
+      --kraft: #c8925a;
+      --kraft-dark: #8a5a2b;
+      --ink: #4e3220;
+      --muted: #7c6450;
+      --paper: #fffaf1;
+      --tape: #9ccfd6;
+      --butter: #f3bd3c;
+      --coral: #ef7d66;
+      --sage: #77b07a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #e9d2b0;
+      background-image: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 9px);
+      color: var(--ink);
+      font: 16px/1.7 -apple-system, "Helvetica Neue", Arial, sans-serif;
+      padding: 28px 16px 48px;
+    }
+
+    .slip {
+      position: relative;
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--paper);
+      border-radius: 6px;
+      padding: 40px 28px 28px;
+      box-shadow: 0 10px 30px rgba(90, 55, 20, 0.18);
+    }
+
+    .slip::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      width: 150px;
+      height: 26px;
+      margin-left: -75px;
+      background: var(--tape);
+      opacity: 0.85;
+      transform: rotate(-2deg);
+    }
+
+    .head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 3px double var(--kraft);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+    }
+
+    .head .app {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--kraft-dark);
+    }
+
+    .head h1 {
+      font-size: 30px;
+      line-height: 1.2;
+      margin-top: 4px;
+    }
+
+    .stamp {
+      flex: none;
+      border: 2px solid var(--coral);
+      color: var(--coral);
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      transform: rotate(-6deg);
+    }
+
+    .intro {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    section {
+      border: 2px dashed #e0c49c;
+      border-radius: 10px;
+      padding: 18px 18px 16px;
+      margin-bottom: 16px;
+      background: #fffdf8;
+    }
+
+    section h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    section h2 .no {
+      flex: none;
+      background: var(--kraft);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+      padding: 3px 8px;
+    }
+
+    section:nth-of-type(3n+1) h2 .no {
+      background: var(--butter);
+    }
+
+    section:nth-of-type(3n+2) h2 .no {
+      background: var(--coral);
+    }
+
+    section:nth-of-type(3n) h2 .no {
+      background: var(--sage);
+    }
+
+    section p + p,
+    section p + ul,
+    section ul + p {
+      margin-top: 8px;
+    }
+
+    section ul {
+      padding-left: 20px;
+    }
+
+    section li {
+      margin: 4px 0;
+    }
+
+    a {
+      color: var(--kraft-dark);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 22px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    footer a {
+      margin: 0 8px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .links a {
+      background: var(--butter);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 10px 18px;
+    }
+  </style>
+</head>
+<body>
+  <main class="slip">
+    <div class="head">
+      <div>
+        <p class="app">Packing puzzle game</p>
+        <h1>Tidy Pack Master</h1>
+      </div>
+      <span class="stamp">PACKED</span>
+    </div>
+    <p class="intro">Run a little packing studio and help your clients move house. Pick things off cluttered piles, fill each box with three of a kind, and hear the story behind every keepsake.</p>
+    <section>
+      <h2><span class="no">INFO</span>Policies and contact</h2>
+      <p>Everything about how the game handles your progress, and the ground rules for playing, is on these two pages.</p>
+      <div class="links">
+        <a href="privacy/">Privacy Policy</a>
+        <a href="terms/">Terms of Use</a>
+      </div>
+      <p>Questions or ideas: <a href="mailto:nguyenthanhthao9197@icloud.com">nguyenthanhthao9197@icloud.com</a></p>
+    </section>
+  </main>
+</body>
+</html>
